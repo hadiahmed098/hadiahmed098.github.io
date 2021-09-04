@@ -44,36 +44,13 @@
 				<div class="card-body">
 					<h5 class="card-title">About Me</h5>
 					<p class="card-text">
-						I am an aspiring Computer Engineer studying at Purdue University who 
-							loves to work with others and give back. When I am given a task, I 
-							am driven to complete it to the highest of standards and surpass 
-							expectations. As a team member, I always contribute a variety of 
-							ideas to discussions. I am currently looking for an internship at a 
-							company that values a strong leader and communicator. 
-						<br /><br />
-						During high school, I lead a club that taught Python programming to 
-							middle schoolers. As an Eagle Scout, I volunteered in my community 
-							extensively and worked tirelessly to help others. I also was part of 
-							a team that developed software for the school administration. 
-						<br /><br />
-						At Purdue University, I am the lead for Software Saturdays, a Purdue 
-							initiative to teach other engineers programming and software tools. 
-							I design and create example programs, final projects, and learning 
-							material each week.
-						<br /><br />
-						As a SubTeam Lead on the Purdue Aerial Robotics Team, I am responsible 
-							for coordinating with multiple teams and projects to create different 
-							technology stacks for controlling our autonomous UAV. Some of my tasks 
-							include designing autonomy algorithms, creating an image transmission 
-							pipeline, and constructing flight control software.
-						<br /><br />
-						Outside of my education, I love to play around with photography and enjoy 
-							the outdoors. There is nothing better than a long hike through a national 
-							park armed with a camera. I also enjoy recreational archery and watching 
-							football.
-						<br /><br />
-						Some of my technical strengths include Java, Python, C/C++, JavaScript, 
-							MATLAB, SystemVerilog, and microprocessors. 
+						I am an aspiring Computer Engineer studying at Purdue University who loves to work with others and give back. 
+						When I am given a task, I am driven to complete it to the highest of standards and surpass expectations. As a 
+						team member, I always contribute a variety of ideas to discussions. I am currently looking for an internship 
+						at a company that values a strong leader and communicator.
+						<br><br>
+						Some of my technical strengths include C, C++, Verilog, SystemVerilog, Python, ARM Assembly, JavaScript, ReactJS, 
+						VueJS, FPGA, and MATLAB.
 					</p>
 				</div>
 			</div>
@@ -101,7 +78,7 @@
 										<em>Bachelor of Science, Computer Engineering</em>
 									</p>
 									<p class="card-text">
-										3.66/4.0 GPA
+										3.75/4.0 GPA
 									</p>
 								</div>
 							</div>
@@ -110,6 +87,19 @@
 						<div class="card mb-2">
 							<div class="card-header">Work Experience</div>
 							<div class="card-body">
+								<div class="d-flex justify-content-between">
+									<p class="card-text">
+										<strong>Navistar, Inc</strong> - Melrose Park, IL
+									</p>
+								</div>
+								<div class="d-flex justify-content-between">
+									<p class="card-text">
+										<em>Electrical and Electronics Validation Intern</em>
+									</p>
+									<p class="card-text">
+										May 2021 - August 2021
+									</p>
+								</div>
 								<div class="d-flex justify-content-between">
 									<p class="card-text">
 										<strong>Purdue Aerial Robotics Team</strong> - West Lafayette, IN
@@ -176,7 +166,7 @@
 										<strong>Purdue University Dean's List and Semester Honors</strong>
 									</p>
 									<p class="card-text">
-										December 2020
+										May 2021
 									</p>
 								</div>
 								<div class="d-flex justify-content-between">
@@ -205,6 +195,57 @@
 					<h5 class="card-title">Projects</h5>
 					<div class="card-group mb-3">
 						<div class="card text-dark border-dark">
+							<div class="card-header">ToDo App</div>
+							<div class="card-body">
+								<p class="card-text">
+									A VueJS web application that allows the user to enter
+									tasks they need to complete. Users can edit, delete, or
+									finish tasks. All data is stored in a Firebase Realtime
+									Database with user authentication handled by Firebase
+									Authenticator.
+								</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://hadiahmed098.github.io/ToDo">hadiahmed098.github.io/ToDo</a>
+							</div>
+						</div>
+						<div class="card text-dark border-dark">
+							<div class="card-header">USB Rx/Tx Peripheral</div>
+							<div class="card-body">
+								<p class="card-text">
+									A USB 2.0 Full Speed Peripheral connected through an 
+									AHB-Lite bus written in Verilog. Implements FSMs, bit
+									stuffing for timing synchronization, and CRC error
+									detection. The project also contains SystemVerilog
+									component and design level test benches to verify 
+									the design. After synthesis using Mentor Graphics Questa,
+									I further verfied the design and checked STA reports
+									for positive slack.
+								</p>
+							</div>
+							<div class="card-footer">
+								Class Project (ASIC Design)
+							</div>
+						</div>
+						<div class="card text-dark border-dark">
+							<div class="card-header">Live Data Manipulation</div>
+							<div class="card-body">
+								<p class="card-text">
+									A C++ program utilizing multi-threading and a 
+									parallelized image processing pipeline to manipulate
+									data streams from camera and lidar sensors on autonomous
+									vehicles. I was successfully able to introduce both hardware
+									and software errors including noise, blur, vibration, and 
+									artificial lighting and darkening.
+								</p>
+							</div>
+							<div class="card-footer">
+								Employer Project (Navistar, Inc)
+							</div>
+						</div>
+					</div>
+					<div class="card-group mb-3">
+						<div class="card text-dark border-dark">
 							<div class="card-header">Pokedex</div>
 							<div class="card-body">
 								<p class="card-text">
@@ -220,19 +261,20 @@
 							</div>
 						</div>
 						<div class="card text-dark border-dark">
-							<div class="card-header">SimpleCipher</div>
+							<div class="card-header">Tic-Tac-Toe</div>
 							<div class="card-body">
 								<p class="card-text">
-									A text cipher written in Java that uses the Java Swing 
-									libraries. It manipulated text encodings to transform 
-									Latin characters into random UTF-16 Unicode characters.
-									Text is encoded by converting each character into 
-									morse code, assigning each character a psuedorandom 
-									number, and converting the numbers into a Unicode string.
+									The game of Tic-Tac-Toe created using an Arduino 
+									and Field Prgrammable Gate Array (FPGA).
+									The Arduino hosted two computer players using
+									an algorithm written in C to play Tic-Tac-Toe.
+									The game board was made of LEDs and powered
+									by the FPGA. The FPGA contained a nine address
+									2-bit memory register for storing game state. 
 								</p>
 							</div>
 							<div class="card-footer">
-								<a href="https://hadiahmed098.github.io/SimpleCipher">hadiahmed098.github.io/SimpleCipher</a>
+								<a href="https://photos.app.goo.gl/RFeV9jznbJg7YxXR8">photos.app.goo.gl/RFeV9jznbJg7YxXR8</a>
 							</div>
 						</div>
 						<div class="card text-dark border-dark">
@@ -288,20 +330,19 @@
 							</div>
 						</div>
 						<div class="card text-dark border-dark">
-							<div class="card-header">Tic-Tac-Toe</div>
+							<div class="card-header">SimpleCipher</div>
 							<div class="card-body">
 								<p class="card-text">
-									The game of Tic-Tac-Toe created using an Arduino 
-									and Field Prgrammable Gate Array (FPGA).
-									The Arduino hosted two computer players using
-									an algorithm written in C to play Tic-Tac-Toe.
-									The game board was made of LEDs and powered
-									by the FPGA. The FPGA contained a nine address
-									2-bit memory register for storing game state. 
+									A text cipher written in Java that uses the Java Swing 
+									libraries. It manipulated text encodings to transform 
+									Latin characters into random UTF-16 Unicode characters.
+									Text is encoded by converting each character into 
+									morse code, assigning each character a psuedorandom 
+									number, and converting the numbers into a Unicode string.
 								</p>
 							</div>
 							<div class="card-footer">
-								<a href="https://photos.app.goo.gl/RFeV9jznbJg7YxXR8">photos.app.goo.gl/RFeV9jznbJg7YxXR8</a>
+								<a href="https://hadiahmed098.github.io/SimpleCipher">hadiahmed098.github.io/SimpleCipher</a>
 							</div>
 						</div>
 					</div>
