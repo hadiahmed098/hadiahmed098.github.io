@@ -1,0 +1,13 @@
+.bg-green {
+    background-color: #a3d6a3;
+}
+
+.hero-image {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/exec-2021-22.jpg');*/
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+}
